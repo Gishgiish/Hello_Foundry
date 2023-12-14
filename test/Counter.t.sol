@@ -4,8 +4,8 @@ pragma solidity 0.8.20;
 import {Test, console2, stdError} from "forge-std/Test.sol";
 import {Counter} from "../src/Counter.sol";
 
-contract CounterTest is Test {
 
+contract CounterTest is Test {
     Counter public counter;
 
     function setUp() public {
@@ -33,5 +33,4 @@ contract CounterTest is Test {
         counter.dec();
         assertEq(counter.count(), 1);
     }
-    
 }
